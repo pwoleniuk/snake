@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(SFMLApp)
+project(Snake)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(SFMLApp main.cpp Board.cpp Board.h)
-target_link_libraries (SFMLApp sfml-graphics sfml-window sfml-system)
+add_executable(Snake main.cpp Board.cpp Board.h Snake.cpp Snake.h SFMLView.cpp SFMLView.h SFMLController.cpp SFMLController.h)
+target_link_libraries (Snake sfml-graphics sfml-window sfml-system)
