@@ -15,7 +15,7 @@ Snake &snake;
 float sizeField;
 sf::Vector2f position;
 public:
-    SFMLView(Board board, Snake snake);
+    SFMLView(Board &board, Snake &snake);
     void draw(sf::RenderWindow &win);
 
 };
